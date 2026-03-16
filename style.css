@@ -228,20 +228,83 @@ body {
     transform: translateY(-3px);
 }
 
-/* Mobile Responsiveness */
+/* Result Screen Details */
+.result-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.mbti-type {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 1rem;
+    letter-spacing: -3px;
+}
+
+.mbti-nickname {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.result-info {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+.mbti-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    word-break: keep-all;
+}
+
+.quote-box {
+    position: relative;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-family: serif;
+}
+
+.mbti-quote {
+    font-style: italic;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* Mobile Responsiveness Updates */
 @media (max-width: 480px) {
-    .title {
-        font-size: 1.8rem;
+    .mbti-type {
+        font-size: 3.5rem;
     }
-    .description {
-        font-size: 1rem;
+    .mbti-nickname {
+        font-size: 1.4rem;
     }
-    .primary-btn {
-        width: 100%;
-        padding: 1rem 2rem;
-        font-size: 1.1rem;
-    }
-    .q-text {
-        font-size: 1.25rem;
+    .result-info {
+        padding: 1.5rem;
     }
 }

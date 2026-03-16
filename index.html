@@ -30,10 +30,19 @@
         </section>
 
         <section id="result-screen" class="glass-card hidden">
-            <h1 class="title">테스트 완료!</h1>
-            <p class="description">성격 유형 분석 중입니다...</p>
-            <div id="mbti-result" class="result-text"></div>
-            <button id="restart-btn" class="secondary-btn">다시 하기</button>
+            <h1 class="result-title">당신의 유형은...</h1>
+            <div id="mbti-type" class="mbti-type">ENFP</div>
+            <h2 id="mbti-nickname" class="mbti-nickname">열정적인 중재자</h2>
+            
+            <div class="result-info">
+                <p id="mbti-description" class="mbti-description">여기에 유형 설명이 들어갑니다.</p>
+                <div class="quote-box">
+                    <span class="quote-icon">"</span>
+                    <p id="mbti-quote" class="mbti-quote">여기에 유머러스한 응답이 들어갑니다.</p>
+                </div>
+            </div>
+
+            <button id="restart-btn" class="primary-btn">테스트 다시하기</button>
         </section>
     </main>
     <script src="script.js"></script>
